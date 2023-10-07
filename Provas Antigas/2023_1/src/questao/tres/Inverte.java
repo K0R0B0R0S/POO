@@ -3,7 +3,7 @@ package questao.tres;
 public class Inverte{
 
     public static void main(String[] args){
-        String x = "abcdefghij";
+        String x = "abcdefghijk";
         System.out.println(inverte(x));
     }
 

@@ -63,7 +63,7 @@ public abstract class Lutador {
     public Lutador sorteiaLuta(Lutador[] l){
         ArrayList<Lutador> lutadores = new ArrayList<Lutador>();
         for (Lutador lutador: l){
-            if(this.exibeCategoria() == lutador.exibeCategoria()){
+            if(this.exibeCategoria().equals(lutador.exibeCategoria())){
                 lutadores.add(lutador);
             }
         }

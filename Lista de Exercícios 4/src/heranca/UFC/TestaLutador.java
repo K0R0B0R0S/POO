@@ -1,5 +1,7 @@
 package heranca.UFC;
 
+import javax.sound.midi.Soundbank;
+
 public class TestaLutador {
     public static void main(String[] args) {
         Lutador[] lutadores = new Lutador[10];
@@ -18,8 +20,10 @@ public class TestaLutador {
         //Adicionar numero vindo do Scanner.
         int numero = 1;
         System.out.println(lutadores[numero]);
+        System.out.println("Possíveis Lutadores:");
         lutadores[numero].possiveisLutas(lutadores);
-        lutadores[numero].sorteiaLuta(lutadores);
+        System.out.println("Lutador Sorteado:");
+        System.out.println(lutadores[numero].sorteiaLuta(lutadores));
 
     }
 }

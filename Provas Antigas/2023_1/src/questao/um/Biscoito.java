@@ -40,4 +40,8 @@ public class Biscoito{
         }
         return false;
     }
+
+    public String toString(){
+        return "["+ getId() + "|" + getCor() + "|" + getPreco() + "]";
+    }
 }

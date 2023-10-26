@@ -15,25 +15,34 @@ public class TestaBiscoito{
         Biscoito a = new Biscoito(id);
         boolean resultado = Utils.existe(x, a);
         System.out.println(resultado);
-        System.out.println(transformaListEmArray(x));
+        if(resultado){
+            System.out.println(x.get(x.indexOf(a)));
+        }else{
+            System.out.println("Biscoito não existe");
+        }
 
-        System.out.println(calculaTotal(transformaListEmArray(x)));
+        Biscoito[] arrayBiscoito = transformaListEmArray(x);
+        System.out.println(calculaTotal(arrayBiscoito));
 
 
         scan.close();
     }
 
-    public static ArrayList transformaListEmArray(List k){
-        ArrayList returnArray = new ArrayList();
+    public static Biscoito[] transformaListEmArray(List k){
+        ArrayList biscoitos = new ArrayList();
         for (Object object : k) {
             if (object instanceof Biscoito) {
-                returnArray.add(object);
+                biscoitos.add(object);
             }
+        }
+        Biscoito[] returnArray = new Biscoito[biscoitos.size()];
+        for(int i=0;i<biscoitos.size();i++){
+            returnArray[i] = (Biscoito)biscoitos.get(i);
         }
         return returnArray;
     }
 
-    public static int calculaTotal(ArrayList k){
+    public static int calculaTotal(Biscoito[] k){
         int total = 0;
         for(Object object: k){
             Biscoito u = (Biscoito)object;

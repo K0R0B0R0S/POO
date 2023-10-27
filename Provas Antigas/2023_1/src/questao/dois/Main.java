@@ -12,6 +12,7 @@ public class Main {
         List strings = new ArrayList();
         while (strings.size() < 1000) {
             String entrada = sc.nextLine();
+            //If com break dentro de while deveria estar na condição a ser testada :D
             if(entrada.equals("finalizar")){
                 break;
             }

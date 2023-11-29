@@ -1,5 +1,0 @@
-1#Sol#0#E
-2#Plutão#384400#P
-3#Marte#225000000#P
-4#Alfa Centauri#4.24#E
-5#Júpiter#588000000#P

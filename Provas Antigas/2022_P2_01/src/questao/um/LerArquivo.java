@@ -8,7 +8,7 @@ public class LerArquivo{
     public static Set<String> retornaString(){
         Set<String> retorno = new HashSet<String>();
         try {
-            File myObj = new File("C:\\Users\\Jose\\Desktop\\BCC\\POO\\Provas Antigas\\2022_P2_01\\2022_P2_01\\src\\questao\\um\\corposCelestes.txt");
+            File myObj = new File("corposCelestes.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();

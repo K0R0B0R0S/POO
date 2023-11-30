@@ -19,7 +19,6 @@ public class Utils {
             if(aux.contains(palavrao)){
                 int strComeco = aux.indexOf(palavrao);
                 int strFinal = strComeco + palavrao.length();
-                System.out.println(strComeco + " | "+ strFinal);
                 texto = texto.substring(0, strComeco) + "#".repeat(palavrao.length()) + texto.substring(strFinal, aux.length());
             }
         }

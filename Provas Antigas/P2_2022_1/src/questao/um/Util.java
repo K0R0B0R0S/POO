@@ -25,7 +25,7 @@ public class Util {
             String[] splitedDado = dado.split("#");
             
             if (splitedDado.length != 4){
-                throw new FormatoIncorretoException("O formato da String " + dado + " esta incorreto");
+                throw new FormatoIncorretoException(dado);
             }
 
             if ("P".equals(splitedDado[3])){

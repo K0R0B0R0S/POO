@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class Utils {
     public static void verifica(String texto) throws TextoCurtoException{
         if (texto.length() < 10){
-            throw new TextoCurtoException("Texto inserido com " + texto.length() + " caracteres");
+            throw new TextoCurtoException(Integer.toString(texto.length()));
         }
     }
 

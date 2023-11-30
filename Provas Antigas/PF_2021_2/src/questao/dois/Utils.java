@@ -16,10 +16,11 @@ public class Utils {
         String aux = texto.toLowerCase();
         while (it.hasNext()) {
             String palavrao = ((String)it.next()).toLowerCase();
-            if(aux.contains(palavrao)){
+            while(aux.contains(palavrao)){
                 int strComeco = aux.indexOf(palavrao);
                 int strFinal = strComeco + palavrao.length();
                 texto = texto.substring(0, strComeco) + "#".repeat(palavrao.length()) + texto.substring(strFinal, aux.length());
+                aux = aux.substring(0, strComeco) + "#".repeat(palavrao.length()) + aux.substring(strFinal, aux.length());
             }
         }
         return texto;

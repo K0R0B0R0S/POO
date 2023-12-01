@@ -3,6 +3,10 @@ package questao.tres;
 public class Livro {
     private String id;
 
+    public Livro(){
+        
+    }
+
     public Livro(String id){
         this.id = id;
     }
@@ -27,10 +31,5 @@ public class Livro {
         return "Livro id: " + this.id;
     }
 
-    @Override
-    public int hashCode() {
-        // TODO Auto-generated method stub
-        return super.hashCode() + Integer.parseInt(this.id);
-    }
     
 }

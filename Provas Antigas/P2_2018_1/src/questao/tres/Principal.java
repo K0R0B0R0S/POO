@@ -1,6 +1,5 @@
 package questao.tres;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Principal {

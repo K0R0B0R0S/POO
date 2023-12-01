@@ -3,8 +3,6 @@ package questao.tres;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Collections;
-import java.util.Map;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Iterator;
 
@@ -25,6 +23,7 @@ public class Util {
     //     System.out.println(mapa);
     // }
 
+    // Contagem com Set
     public static void quantidade(CarrinhoDeCompras car){
         List<Livro> listagemLivro = car.getLista();
         Set<String> listagemUnica = new HashSet<String>();
@@ -37,8 +36,6 @@ public class Util {
             Livro l = new Livro(it.next());
             System.out.println(l + "-" + Collections.frequency(listagemLivro, l));
         }
-        
-
-
     }
+
 }

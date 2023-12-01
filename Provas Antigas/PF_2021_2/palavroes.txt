@@ -175,3 +175,5 @@ Zuado
 Zuera
 Zulu
 Zureta
+Bol
+Casa

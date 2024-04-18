@@ -6,8 +6,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Iterator;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Util {
-    // Contagem com Map
+    // Contagem com Map: sem utilizar Collections
     // public static void quantidade(CarrinhoDeCompras car){
     //     Map<String, Integer> mapa = new HashMap<String, Integer>();
     //     List<Livro> listagem = car.getLista();
@@ -38,4 +41,15 @@ public class Util {
         }
     }
 
+    // Para utilizar esse metodo deve-se descomentar HashCode e Equals de Livro
+    // public static void quantidade(CarrinhoDeCompras car){
+    //     Map<Livro, Integer> mapa = new HashMap<Livro, Integer>();
+    //     List<Livro> lista = car.getLista();
+
+    //     for (Livro l: lista){
+    //         mapa.put(l, Collections.frequency(lista, l));
+    //     }
+
+    //     System.out.println(mapa);
+    // }
 }
